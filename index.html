@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #0066cc;
+            margin-top: 10px;
+            min-width: 150px;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            display: block;
+            margin: 0;
+        }
+
+        .light-dark-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        .categories {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .category {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .category img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .category h3 {
+            margin-top: 15px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: center;
+            margin: 40px 0;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            flex: 1;
+            margin: 10px;
+            max-width: 200px;
+        }
+
+        .service img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid #0066cc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #0066cc;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            header, footer {
+                text-align: center;
+            }
+
+            .categories {
+                flex-direction: column;
+            }
+
+            .category {
+                margin: 20px 0;
+            }
+
+            .services {
+                flex-direction: column;
+            }
+
+            .service {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Discover the World with Us</h1>
+        <nav>
+            <ul>
+                <li><a href="register.html">Register here</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a>
+                    <ul>
+                        <li><a href="#consulting">Consulting</a></li>
+                        <li><a href="#booking">Booking</a></li>
+                    </ul>
+                </li>
+            
+            </ul>
+        </nav>
+        <div class="light-dark-toggle" onclick="toggleTheme()">
+            🌞 / 🌙
+        </div>
+    </header>
+    <main>
+        <section id="home">
+           <marquee> <h2 align="center">Welcome to Our Tourism Website</h2></marquee>
+            <p align="center">Your adventure starts here. Explore breathtaking destinations around the world.</p>
+        </section>
+        <section id="categories">
+            <div class="categories">
+                <div class="category">
+                    <img src="image2.jpg" alt="Beautiful Beach">
+                    <h3>Beach Paradise</h3>
+                    <p>Relax on the most beautiful beaches in the world.</p>
+                </div>
+                <div class="category">
+                    <img src="image1.jpg" alt="Mountain View">
+                    <h3>Mountain Adventures</h3>
+                    <p>Explore stunning mountain ranges and enjoy thrilling activities.</p>
+                </div>
+                <div class="category">
+                    <img src="image3.jpg" alt="Historic City">
+                    <h3>Historic Cities</h3>
+                    <p>Discover the rich history and culture of ancient cities.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <h2 align="center">Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="consulting.jfif" alt="Consulting">
+                    <h3>Consulting</h3>
+                    <p>Expert travel advice and personalized itinerary planning.</p>
+                </div>
+                <div class="service">
+                    <img src="booking.jfif" alt="Booking">
+                    <h3>Booking</h3>
+                    <p>Convenient and hassle-free booking services for your travels.</p>
+                </div>
+                <div class="service">
+                    <img src="Transport.jfif" alt="Transport">
+                    <h3>Transport</h3>
+                    <p>Reliable and comfortable transportation options.</p>
+                </div>
+                <div class="service">
+                    <img src="Accomodation.jfif" alt="Accommodation">
+                    <h3>Accommodation</h3>
+                    <p>Comfortable and luxurious accommodations.</p>
+                </div>
+                <div class="service">
+                    <img src="Tours.jfif" alt="Tours">
+                    <h3>Tours</h3>
+                    <p>Guided tours to enhance your travel experience.</p>
+                </div>
+                <div class="service">
+                    <img src="support.jpg" alt="Support">
+                    <h3>Support</h3>
+                    <p>24/7 support to assist you during your travels.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 align="center">Contact Us</h2>
+            <p align="center">Get in touch with us for more information and personalized travel plans.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Discover the World with Us. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript to handle theme toggle
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        // Add CSS for dark mode
+        const style = document.createElement('style');
+        style.innerHTML = `
+            .dark-mode {
+                background-color: #333;
+                color: #f4f4f9;
+            }
+            .dark-mode header, .dark-mode footer {
+                background-color: #222;
+            }
+            .dark-mode nav ul li a {
+                color: #f4f4f9;
+            }
+            .dark-mode nav ul li ul {
+                background-color: #222;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>
